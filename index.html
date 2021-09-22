@@ -98,7 +98,7 @@
   star_color <span class="op">=</span> <span class="st">"#fc0"</span>, <span class="co"># default</span>
   star_background <span class="op">=</span> <span class="st">"#999"</span> <span class="co"># default</span>
 <span class="op">)</span></code></pre></div>
-<pre><code>&lt;style&gt;:root {
+<style>:root {
   --star-size: 20px;
   --star-background: #999;
   --star-color: #fc0;
@@ -117,26 +117,25 @@
                               var(--star-background) var(--percent));
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-}&lt;/style&gt;</code></pre>
+}</style>
 <p>Minimal usage of the <code>fivestars</code> function looks like this:</p>
-<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
+<div class="sourceCode" id="cb4"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="reference/fivestars.html">fivestars</a></span><span class="op">(</span>rating <span class="op">=</span> <span class="fl">3.5</span><span class="op">)</span></code></pre></div>
-<pre><code>&lt;div&gt;
-3.5
-&lt;span class="fivestars" style="--rating: 3.5;" aria-label="The rating is 3.5 out of five stars"&gt;&lt;/span&gt;
-&lt;/div&gt;</code></pre>
-<p><br> The output can be further customized with some arguments, e.g.</p>
-<div class="sourceCode" id="cb7"><pre class="downlit sourceCode r">
+<div>
+3.5 <span class="fivestars" style="--rating: 3.5;" aria-label="The rating is 3.5 out of five stars"></span>
+</div>
+<p><br></p>
+<p>The output can be further customized with some arguments, e.g.</p>
+<div class="sourceCode" id="cb5"><pre class="downlit sourceCode r">
 <code class="sourceCode R"><span class="fu"><a href="reference/fivestars.html">fivestars</a></span><span class="op">(</span>rating <span class="op">=</span> <span class="fl">1.2</span>,
          label <span class="op">=</span> <span class="st">"Poor"</span>,
          label_pos <span class="op">=</span> <span class="st">"right"</span>,
          aria_label <span class="op">=</span> <span class="st">"This item is rated 'Poor'"</span>,
          star_color <span class="op">=</span> <span class="st">"#d13"</span>, 
          star_background <span class="op">=</span> <span class="st">"#000"</span><span class="op">)</span></code></pre></div>
-<pre><code>&lt;div&gt;
-&lt;span class="fivestars" style="--rating: 1.2; --star-color: #d13; --star-background: #000;" aria-label="This item is rated &amp;#39;Poor&amp;#39;"&gt;&lt;/span&gt;
-Poor
-&lt;/div&gt;</code></pre>
+<div>
+<span class="fivestars" style="--rating: 1.2; --star-color: #d13; --star-background: #000;" aria-label="This item is rated 'Poor'"></span> Poor
+</div>
 </div>
 </div>
   </div>
