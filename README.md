@@ -45,7 +45,7 @@ use_fivestars(
   star_background = "#999" # default
 )
 ```
-
+```
 <style>:root {
   --star-size: 20px;
   --star-background: #999;
@@ -66,18 +66,18 @@ use_fivestars(
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }</style>
-
+```
 Minimal usage of the `fivestar` function looks like this:
 
 ``` r
 fivestars(rating = 3.5)
 ```
-
+```
 <div>
 3.5
 <span class="fivestars" style="--rating: 3.5;" aria-label="The rating is 3.5 out of five stars"></span>
 </div>
-
+```
 <br> The output can be further customized with some arguments, e.g.
 
 ``` r
@@ -88,8 +88,9 @@ fivestars(rating = 1.2,
          star_color = "#d13", 
          star_background = "#000")
 ```
-
+```
 <div>
 <span class="fivestars" style="--rating: 1.2; --star-color: #d13; --star-background: #000;" aria-label="This item is rated &#39;Poor&#39;"></span>
 Poor
 </div>
+```
