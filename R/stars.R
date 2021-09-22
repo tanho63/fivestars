@@ -66,7 +66,6 @@ use_fivestars <- function(star_size = "larger", star_color = "#fc0", star_backgr
     is.character(star_background)
   )
   
-  htmltools::tags$head(
     htmltools::tags$style(
       htmltools::HTML(
         glue::glue("
@@ -96,6 +95,5 @@ use_fivestars <- function(star_size = "larger", star_color = "#fc0", star_backgr
         )
       )
     )
-  )
   
 }

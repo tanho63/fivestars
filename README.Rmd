@@ -40,17 +40,11 @@ remotes::install_github("tanho63/fivestars")
 
 ## Usage
 
-```{r eval = FALSE}
-library(shiny)
+```{r}
 library(fivestars)
+use_fivestars()
+```
 
-ui <- fluidPage(
-  use_fivestars(),
-  fivestar(2.2)
-)
-
-server <- function(input, output, session) {}
-
-shinyApp(ui, server)
-
+```{r}
+fivestar(2.2)
 ```

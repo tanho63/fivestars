@@ -35,15 +35,33 @@ remotes::install_github("tanho63/fivestars")
 ## Usage
 
 ``` r
-library(shiny)
 library(fivestars)
-
-ui <- fluidPage(
-  use_fivestars(),
-  fivestar(2.2)
-)
-
-server <- function(input, output, session) {}
-
-shinyApp(ui, server)
+use_fivestars()
 ```
+
+<style>:root {
+  --star-size: larger;
+  --star-background: #999;
+  --star-color: #fc0;
+}
+        
+.fivestars {
+  --percent: calc(var(--rating)/5 * 100%);
+  /* display: inline-block; */
+  font-size: var(--star-size);
+  line-height: 1;
+}
+
+.fivestars::before {
+  content: '\2605\2605\2605\2605\2605';
+  background: linear-gradient(90deg, var(--star-color) var(--percent), 
+                              var(--star-background) var(--percent));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}</style>
+
+``` r
+fivestar(2.2)
+```
+
+<span class="fivestars" style="--rating: 2.2;" aria-label="The rating out of five stars is 2.2">2.2</span>
