@@ -1,0 +1,23 @@
+Package: fivestars
+Title: Generates HTML/CSS star ratings
+Version: 0.0.1.01
+Authors@R: 
+    person(given = "Tan",
+           family = "Ho",
+           role = c("aut", "cre"),
+           email = "tan@tanho.ca",
+           comment = c(ORCID = "0000-0001-8388-5155"))
+Description: Creates HTML and CSS star ratings in web documents.
+License: MIT + file LICENSE
+Depends:
+    R (>= 3.0.0)
+Imports:
+    htmltools,
+    glue
+Suggests:
+    testthat (>= 3.0.0)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.1.1
+Config/testthat/edition: 3
