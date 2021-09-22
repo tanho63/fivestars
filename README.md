@@ -43,13 +43,7 @@ ui <- fluidPage(
   fivestar(2.2)
 )
 
-server <- function(input, output, session) {
-  
-}
+server <- function(input, output, session) {}
 
 shinyApp(ui, server)
-#> 
-#> Listening on http://127.0.0.1:5018
 ```
-
-<img src="man/figures/README-unnamed-chunk-3-1.png" width="100%" />
