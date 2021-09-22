@@ -1,6 +1,6 @@
 Package: fivestars
 Title: Generates HTML/CSS star ratings
-Version: 0.0.1.01
+Version: 0.0.1
 Authors@R: 
     person(given = "Tan",
            family = "Ho",
@@ -12,8 +12,8 @@ License: MIT + file LICENSE
 Depends:
     R (>= 3.0.0)
 Imports:
-    htmltools,
-    glue
+    htmltools (>= 0.5.0),
+    glue (>= 1.0.0)
 Suggests:
     testthat (>= 3.0.0)
 Encoding: UTF-8
