@@ -67,7 +67,7 @@ use_fivestars(
   -webkit-text-fill-color: transparent;
 }</style>
 ```
-Minimal usage of the `fivestar` function looks like this:
+Minimal usage of the `fivestars` function looks like this:
 
 ``` r
 fivestars(rating = 3.5)
