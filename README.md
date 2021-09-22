@@ -1,7 +1,7 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
 
-# fivestars
+# fivestars ⭐⭐⭐⭐⭐
 
 <!-- badges: start -->
 <!-- [![CRAN status](https://img.shields.io/cran/v/fivestars?style=flat-square&logo=R&label=CRAN)](https://CRAN.R-project.org/package=fivestars)  -->
@@ -70,7 +70,7 @@ use_fivestars(
 Minimal usage of the `fivestar` function looks like this:
 
 ``` r
-fivestar(rating = 3.5)
+fivestars(rating = 3.5)
 ```
 
 <div>
@@ -81,7 +81,7 @@ fivestar(rating = 3.5)
 <br> The output can be further customized with some arguments, e.g.
 
 ``` r
-fivestar(rating = 1.2,
+fivestars(rating = 1.2,
          label = "Poor",
          label_pos = "right",
          aria_label = "This item is rated 'Poor'",

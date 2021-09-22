@@ -1,0 +1,8 @@
+destination: docs
+
+url: https://tanho63.github.io/fivestars
+
+template:
+  params:
+    bootswatch: cosmo
+    

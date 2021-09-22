@@ -3,18 +3,20 @@
 #' This function creates an HTML tag with the appropriate number of stars, as well as an accessibility label.
 #'
 #' @param rating rating out of five
-#' @param text text to display in tag, defaults to the rating rounded to one decimal place
-#' @param aria_label accessibility label for text, defaults to pasting the text and 
+#' @param label text to display in tag, defaults to the rating rounded to one decimal place
+#' @param aria_label accessibility label for text
+#' @param label_pos "left" or "right" - position of label relative to stars
 #' @param star_size CSS font-size for star background, default is to inherit from `use_fivestars()`
 #' @param star_color CSS colour for stars, default is to inherit from `use_fivestars()`
 #' @param star_background CSS colour for star background, default is to inherit from `use_fivestars()`
 #' 
 #' @examples 
-#' fivestar(3.5)
+#' use_fivestars()
+#' fivestars(3.5)
 #' 
 #' @return an html tag that renders a star rating out of five 
 #' @export
-fivestar <- function(rating,
+fivestars <- function(rating,
                      label = round(rating,1),
                      aria_label = paste("The rating is", round(rating,1), "out of five stars"),
                      label_pos = "left",
@@ -106,5 +108,4 @@ use_fivestars <- function(star_size = "larger", star_color = "#fc0", star_backgr
         )
       )
     )
-  
 }
